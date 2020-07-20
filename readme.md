@@ -1,3 +1,5 @@
+##Code Along
+```javascript
 let name = "Nick Phillips" ;
 let age = 32;
 let isCool = true;
@@ -48,3 +50,22 @@ friends.forEach(friend=> {
     printName(name)
 }
 
+```
+###examples of Fuctions
+```javascript
+//standard Function
+function addNumbers(num1, Num2){
+    return num1 + num2;
+
+};
+// function expression
+const multNumbers(num1, Num2){
+    return num1 * num2;
+
+};
+// arrow
+function subNumbers(num1, Num2)=>{
+    return num1 - num2;
+
+};
+```
