@@ -58,4 +58,29 @@ headerTwo.classList.add('subtitle');
 //headerTwo.setAttribute('class', 'header-two');
 headerTwo.classList.remove('header-two');
 console.log(headerTwo)
+//click change element
+headerTwo.addEventListener('click', function(){
+    headerTwo.textContent = 'Nick' ;
+});
+// make another element
+const headerThree = document.createElement('h3');
+container.appendChild(headerThree);
+console.log(headerThree);
+
+//iterate throuh my friends array
+const list = document.createElement('ul');
+for (let i=0; i< friends.length; i++) {
+    let eachFriend= friends[i];
+    console.log(eachFriend);
+
+    const listItem = document.createElement('li');
+    listItem.textContent = eachFriend;
+
+    list.appendChild(listItem);
+//click action to see friends
+}
+
+ headerThree.addEventListener('click', function() {
+     container.appendChild(list);
+ })
 
