@@ -35,7 +35,7 @@ tesla.print();
 
 // make your own object
 let composer = "Bethoven";
-let age = 56;
+let ageDeath = 56;
 let beautifulMusic = true;
 let instrumentsPlayed= ["piano", "violin",]
 
@@ -44,7 +44,18 @@ function printFriends(array) {
         console.log(friend)
     });
 }
-friends.forEach(friend=> {
-    printName(name)
-}
+const container = document.querySelector('.container');
+console.log(container);
+
+const headerTwo = document.createElement('h2');
+headerTwo.textContent = 'My First JS Review';
+console.log(headerTwo);
+//move h2 into container class
+container.appendChild(headerTwo);
+// two ways to add  a class to headerTwo
+headerTwo.classList.add('subtitle');
+
+//headerTwo.setAttribute('class', 'header-two');
+headerTwo.classList.remove('header-two');
+console.log(headerTwo)
 

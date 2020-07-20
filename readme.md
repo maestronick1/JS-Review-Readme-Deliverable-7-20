@@ -1,9 +1,9 @@
-##Code Along
+##Code Along Types of Objects
 ```javascript
-let name = "Nick Phillips" ;
-let age = 32;
-let isCool = true;
-const friends = [ "Matt", "John", "Andrew"]
+let name = "Nick Phillips" ; //string
+let age = 32;//Numbers
+let isCool = true;//boolean
+const friends = [ "Matt", "John", "Andrew"]//array
 
 
 const tesla ={
@@ -68,4 +68,21 @@ function subNumbers(num1, Num2)=>{
     return num1 - num2;
 
 };
+```
+###adding classes or elements to Dom or nest in elements
+```javascript
+const container = document.querySelector('.container');
+console.log(container);
+
+const headerTwo = document.createElement('h2');
+headerTwo.textContent = 'My First JS Review';
+console.log(headerTwo);
+//move h2 into container class
+container.appendChild(headerTwo);
+// two ways to add  a class to headerTwo
+headerTwo.classList.add('subtitle');
+
+//headerTwo.setAttribute('class', 'header-two');
+headerTwo.classList.remove('header-two');
+console.log(headerTwo)
 ```
