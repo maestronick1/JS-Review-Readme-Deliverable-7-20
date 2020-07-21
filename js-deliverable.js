@@ -18,8 +18,8 @@
 //
  //const array = (['taylor', 'rome', 'adam'], 'rome'); // => true
  //isInside(['pete', 'adam', 'taylor'], 'fred'); // => false
- function isInside(array, ele){
-    for(let i = 0; i < array.length; i++){
+ function isInside(array, ele){// function
+    for(let i = 0; i < array.length; i++){ //for loop if index
         if(array[i] == ele){
             return(true);
         }
@@ -114,12 +114,12 @@ console.log(copyMachine("taxes", 7))
 
 
 function everyOtherWord(sentence){
-    const result=[];
-    let splitSentence = sentence.split(" ");
-    console.log(splitSentence)
-    for(i = 0; i < splitSentence.length; i++){
+    const result=[];// empty array
+    let splitSentence = sentence.split(" ");// split the string up by word
+   // console.log(splitSentence)
+    for(i = 0; i < splitSentence.length; i++){//
        if(!(i % 2 )){
-       result.push(splitSentence[i]);
+       result.push(splitSentence[i]);// [the, is, tonight ]
         
        }
     
@@ -127,7 +127,7 @@ function everyOtherWord(sentence){
     }
     return result;    
 
-}
+}//                          0    1    2    3        4 
 console.log(everyOtherWord('the music is beautiful tonight'));
 // 6. wordYeller
 // Write a function `wordYeller(sentence)` that takes in a sentence string as
@@ -148,12 +148,12 @@ console.log(everyOtherWord('the music is beautiful tonight'));
 
 function wordYeller(sentence){
     let punctuation = ['.', ',', '!', '?', ';', ':'];
-  for(let i = 0; i <punctuation.length; i++){
+  for (let i = 0; i < punctuation.length; i++){
       if(sentence[sentence.length-1] === punctuation[i]){
           return false;
       }
   }
-        return true
+        return true;
 }
 console.log(wordYeller("Go to the store and grab the following: milk, bread, run, and cake"));
 // 7. arraySubstring

@@ -2,7 +2,7 @@
 
 ## HTML EXAMPLES
 
-##The Div element
+## The Div element
 ### The div element define a section ord division in Html.
 ```HTML
 
