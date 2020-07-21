@@ -29,15 +29,16 @@ body {
 }
 ```
 
-## Id selector
+## Id Selector
 
 #### The ID Selector will selstc and the following Element with the specified Id name. The Id selecote is preceed by a hashtag
 
 ```CSS
 
-#table{
+#table {
  border: solid 5px black;
  border-top:none;
+
 }
 ```
 
