@@ -1,4 +1,4 @@
-##Code Along Types of Objects
+## Code Along Types of Objects
 ```javascript
 let name = "Nick Phillips" ; //string
 let age = 32;//Numbers
@@ -51,7 +51,7 @@ friends.forEach(friend=> {
 }
 
 ```
-###examples of Fuctions
+## Examples of Fuctions
 ```javascript
 //standard Function
 function addNumbers(num1, Num2){
@@ -69,7 +69,7 @@ function subNumbers(num1, Num2)=>{
 
 };
 ```
-###adding classes or elements to Dom or nest in elements
+# Adding classes or elements to Dom or nest in elements
 ```javascript
 const container = document.querySelector('.container');
 console.log(container);
@@ -122,7 +122,7 @@ for (let i=0; i< friends.length; i++) {
 - [ ] Am I able to walk through my code line by line with an example?
 - [ ] Do I have a working solution?
 
-## Fizzbuzz Excercise
+# Fizzbuzz Excercise
 
 ```javascript
 function fizzBuzz(array) {
