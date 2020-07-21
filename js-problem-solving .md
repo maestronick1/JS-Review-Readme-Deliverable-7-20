@@ -36,6 +36,19 @@ Ask yourself the following questions with each problem:
 //
 // reverseStr('bootcamp'); //=> 'pmactoob'
 // reverseStr('General Assembly'); //=> 'ylbmessA lareneG'
+function reverseStr(str) {
+     console.log(str.length);
+     let result = [];
+     for (let i = 0; i < str.length;i++) {
+         result[i] = str(i);
+     }
+    console.log(result);
+    console.log(str.split('').reverse().join());
+}
+reverseStr('testing');
+
+
+
 ```
 ### luckySevens
 ```js
@@ -45,7 +58,17 @@ Ask yourself the following questions with each problem:
 // Examples:
 //
 // luckySevens(25); // => [ 7, 14, 21 ]
-// luckySevens(42); // => [ 7, 14, 21, 28, 35, 42 ]
+ luckySevens(42);  => [ 7, 14, 21, 28, 35, 42 ]
+result = [];
+function luckySevens(max){
+    for (let i = 0; i < max ;i++) {
+        if(i % 7){
+        result.push(i);
+        }
+        return result
+    )
+         
+}
 ```
 ### copyMachine
 ```js
