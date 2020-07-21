@@ -146,7 +146,18 @@ console.log(everyOtherWord('the music is beautiful tonight'));
 // let words = "Go to the store and grab the following: milk, bread, run, and cake";
 // wordYeller(words) === "Go! to! the! store! and! grab! the! following: milk, bread, run, and! cake!"; // => true
 
-
+const punctuation = ['.', ',', '!', '?', ';', ':'];
+const wordYeller = (sentence) => {
+    return sentence
+        .split(' ')
+        .map(word => {
+            const lastChar = word[word.length - 1];
+            if (punctuation.includes(lastChar)) return word;
+            return `${word}!`;
+        })
+        .join(' ');
+};  
+console.log(wordYeller("Go to the store and grab the following: milk, bread, run, and cake"));
 // 7. arraySubstring
 // Write a function `arraySubstring(words, str)` that takes in an array of
 // strings and a string as arguments and returns an array where each element is
