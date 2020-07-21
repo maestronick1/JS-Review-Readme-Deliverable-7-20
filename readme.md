@@ -109,4 +109,48 @@ for (let i=0; i< friends.length; i++) {
  headerThree.addEventListener('click', function() {
      container.appendChild(list);
  })
+
+```
+# Problem Solving
+- [ ] Do I understand what the prompt is asking?
+- [ ] Am I able to break the problem down?
+- [ ] What is my strategy for solving the problem?
+- [ ] Do I understand what my code is doing?
+- [ ] Am I able to foresee any edge cases?
+- [ ] Am I able to track the order of the code that is being executed?
+- [ ] Am I able to track the values of the variables?
+- [ ] Am I able to walk through my code line by line with an example?
+- [ ] Do I have a working solution?
+
+## Fizzbuzz Excercise
+
+```javascript
+function fizzBuzz(array) {
+    let result =[]; // Fizz, Buzz, Fizzbuzz, Buzz, Fizz
+     //pass in an array
+    for (let i = 0; i < array.length; i++) {
+    let num = array [i];
+    console.log(num) //3,5,15...
+        //conditional
+    if (num % 3 === 0 && num % 5 === 0) {
+            result.push('FizzBuzz');
+        } else if (num % 3 === 0){
+            result.push('Fizz')
+        } else if (num % 5 === 0){
+            result.push('Buzz')
+    
+
+        } else{
+        result.push(num);
+
+        }
+
+ }
+return result;
+}
+ 
+;
+
+console.log(fizzBuzz([3, 5, 15, 20, 9, 7]));
+
 ```

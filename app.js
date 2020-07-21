@@ -82,5 +82,60 @@ for (let i=0; i< friends.length; i++) {
 
  headerThree.addEventListener('click', function() {
      container.appendChild(list);
- })
+ });
 
+ // problem solving
+ // what do i start with
+ // what do i hope to end up with
+
+ // understand the problem
+ // where the issue start and ..
+
+ // break it into baby steps
+ 
+ 
+ function fizzBuzz(array) {
+    let result =[]; // Fizz, Buzz, Fizzbuzz, Buzz, Fizz
+     //pass in an array
+    for (let i = 0; i < array.length; i++) {
+    let num = array [i];
+    console.log(num) //3,5,15...
+        //conditional
+    if (num % 3 === 0 && num % 5 === 0) {
+            result.push('FizzBuzz');
+        } else if (num % 3 === 0){
+            result.push('Fizz')
+        } else if (num % 5 === 0){
+            result.push('Buzz')
+    
+
+        } else{
+        result.push(num);
+
+        }
+
+ }
+return result;
+}
+ 
+;
+
+console.log(fizzBuzz([3, 5, 15, 20, 9, 7]));
+
+
+//const array = [['taylor', 'rome', 'adam'], 'rome']; // => true
+// isInside(['pete', 'adam', 'taylor'], 'fred'); // => false
+        
+        function isInside(array, ele){
+            for(let i = 0; i < array.length; i++){
+                if(array[i] == ele){
+                    console.log(true);
+                }else{
+                    console.log(false);
+                }
+                
+            }
+        
+        }
+    
+      isInside(['taylor', 'peter', 'adam'], 'rome'); 
