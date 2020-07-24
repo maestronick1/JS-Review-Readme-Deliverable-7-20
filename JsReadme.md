@@ -206,7 +206,7 @@ function band(drummer, singer, guitarPlayer) {
 let jimmy = new Band( "Jimmy Page", "Led Zeppelin", true)
 console.log(jimmy);
 jimmy.intro()//call the this.intro function above
- 
+``` 
 ## Class Objects
 A class is a type of function, but instead of using the keyword function to initiate it, we use the keyword class, and the properties are assigned inside a constructor() method.
 ```js

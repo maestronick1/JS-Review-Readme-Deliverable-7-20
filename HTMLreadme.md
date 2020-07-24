@@ -77,8 +77,7 @@ The input tag is a single line tex input field containing many 'types' of inputs
 
 ## The Label Tag
 
-The label tag defines a label for several purposes in several elements
-below are examples of a label tag.
+The label tag defines a label for several purposes in several elements below are examples of a label tag.
 
 ```HTML
 <input type="checkbox">
@@ -94,7 +93,8 @@ below are examples of a label tag.
 
 ```
 ## Bootstrap
- Bootstrap is the leading framework for building responsive sires, with CDN and templates.
+
+ Bootstrap is the leading framework for building responsive sites, with CDN and templates.
  ```HTML
 -CSS tag for Bootstrap- 
 
@@ -104,7 +104,7 @@ below are examples of a label tag.
 
  JS tags for Bootstrap
 
-- like the CSS Bootstrap Tag make sure the JS Bootstrap reference tag also stays about the local referenced .js script tag or it will not work.
+- like the CSS Bootstrap Tag make sure the JS Bootstrap reference tag also stays about the referenced .js script tag or it will not work.
 
  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

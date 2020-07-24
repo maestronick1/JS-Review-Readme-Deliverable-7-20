@@ -11,6 +11,7 @@ CSS Readme
 
 #### The element that selected will follow an opening curly bracket, the styling. This selects and styles all elements #### with the specified name and a closing curly bracket will follow.
 ```CSS
+
 body {
     text-align: center;
     font-size: 14px
@@ -57,6 +58,7 @@ Thouh this example is in HTML Flex container is a good way to manipulate multipl
 ```
 ### Examples of Flex
 ```CSS
+
 display: flex; activates the flexibilty of Flex. and flex-direction: column; stackes the items vertically from top to bottom;
 
 
@@ -86,6 +88,7 @@ display: flex; activates the flexibilty of Flex. and flex-direction: column; sta
 
 # Grid Display Property 
 ```CSS
+
    .grid-container {
   display: grid;
   grid-template-columns: 20% 20% 20% 20%
