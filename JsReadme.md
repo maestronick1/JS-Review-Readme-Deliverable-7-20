@@ -23,24 +23,14 @@ const tesla ={
     print: function (){
         console.log("The CEO of TEsla is ' + this.ceo");
     }
-}
-tesla.stockPrice = 1643.00;
-console.log(tesla)
-console.log(name);
-console.log(age);
-console.log(isCool);
-console.log(friends);
-console.log(tesla.vehicles.vehicleThree)
-console.log(tesla.vehicles.vehicleTwo)
 
-tesla.print();
 
 
 // make your own object
-let composer = "Bethoven";
-let age = 56;
+let composer = "Mozart";
+let age = 33;
 let beautifulMusic = true;
-let instrumentsPlayed= ["piano", "violin",]
+let instrumentsPlayed= ["piano", "violin", "Cello"]
 
 function printFriends(array) {
     array.forEach( friend => {
@@ -166,134 +156,80 @@ console.log(fizzBuzz([3, 5, 15, 20, 9, 7]));
 is programming based on the concept of "objects",
 
 ```JS
-const dog = {
-    name: "Michael",// objects and key values
-    goodBoy: true,
-    gender: "girl"
+const dude = {
+    name: "Nick",
+    creative: true,
+    gender: "male"
+    eyeCOlor: "green
 }
 
-const dogTwo = {
-    name: "Rocco",
-    color: 'brown'
+const dude2 = {
+    name: "Andre",
+    friendly: false,
+    gender: "male"
+    eyeColor: 'brown',
+
+
 
 };
 
-dogTwo. __proto__ = dog//that exposes the internal [[Prototype]] (either an object or null) of the object through which it is accessed.
+friendOne. __proto__ = friendTwo//that exposes the internal [[Prototype]] (either an object or null) of the object through which it is accessed.
 
 
-console.log(dog);
-console.log(dogTwo);
-console.log(dogTwo.goodBoy);
-console.log(dogTwo.name);
-
-
-const mountainOne = {
-    height: "tall",
-    beautiful: true,
-    trees: true,
-};
-const mountainTwo = {
-    height: "short",
-    beautiful: false,
-    trees: true,
-};
-mountainTwo.__proto__=mountainOne;
-console.log(mountainOne)
-console.log(mountainTwo)
-
-apartOne = {
- location: "long Island",   
- rooms: 3
-}
-apartTwo = {
- location: "brooklyn",   
- color: "white"
-
-}
-
-apartTwo.__proto__ = apartOne;
-
-apartTwo.rooms = 4;
-console.log(apartTwo.rooms)
-console.log(apartOne.rooms)
+console.log(friend one);
+console.log(friendTwo);
+console.log(friendTwo.friendly);
+console.log(friend.name);
 ```
 ## Object Constructors
 The constructor method is a special method for creating and initializing an object created within a class.
 ```js
-function User (name) {//constructor Functions
+function User (name) {//constructor 
     // this
     this.name = name;
     // retun this
 }
-let adam = new User('Adam');
-let pete = new User('Pete');
+let nick = new User('Nick');
+let john = new User('John');
 
-console.log(pete.name);
+console.log(john.name);
 
-console.log(adam.name);
-function NBAPlaeyer(name, team, threePtShooter) {
-    this.name = name;
-    this.team = team;
-    this.threePtShooter = threePtShooter;
+console.log(nick.name);
+function band(drummer, singer, guitarPlayer) {
+    this.drummer = drummer;
+    this.singer = singer;
+    this.guitarPlayer = guitarPlayer;
     this.intro = function() {
-        console.log ("hi may name is" +  this.name)
+        console.log ("Stairway to heaven" +  this.guitsr)
     }
 }
-let steph = new NBAPlaeyer( "Steph Curry", "Warriors", true)
-console.log(steph);
-steph.intro()//call the this.intro function above
+let jimmy = new Band( "Jimmy Page", "Led Zeppelin", true)
+console.log(jimmy);
+jimmy.intro()//call the this.intro function above
  
-
-function User (pianist, musician){
-    this.pianist = pianist;
-    this.musician = musician;
-    this.myNameIs = function() {
-        console.log("hi, my name is Nick")
-    }
-}
-let nick = new User('Nick Phillips', "pianist", true);
-let john = new User( "John Lennon", "musician", true)
-console.log(nick)
-console.log(nick.name)
-nick.myNameIs()
-```
 ## Class Objects
 A class is a type of function, but instead of using the keyword function to initiate it, we use the keyword class, and the properties are assigned inside a constructor() method.
 ```js
 // make a class object
 
-class Car  {
-    constructor( year, make, model, color) {
-        this.name = year;
-        this.make = make;
-        this.color = color;
-        this.model = model;
+class Char  {
+    multiplayerGame( style, char, race, profession) {
+        this.style = style;
+        this.char = char;
+        this.profession = profession;
     }
-    drive(){
-        console.log("Vroom");
+    fight(){
+        console.log("Die evil spawn!");
     }
     intro(){
-        console.log('This is a ' + this.make + ' ' + this.model + " " + 'and goes');
+        console.log('This is'+ this.char +  ' ' + a + " " + this.race;
     }
 }
 
-let tesla = new Car('2020', 'Tesla','Model S', 'White');
-console.log(tesla);
-tesla.drive();
-tesla.intro();
-
-
-
-class GitProfile{
-    constructor( username, name, url) {
-        this.username = username;
-        this.name = name;
-        this.url = url;
-    }
-    intro(){
-        console.log(`My name is ${this.name} and my username is @${this.username}`)
-    }
-}
+let hunter = new Char('cloaked', 'Hunter', 'Rogue');
+console.log(hunter);
+hunter.fight();
+hunert.intro();
 ```
 ## Fetch Examples
 
@@ -321,38 +257,38 @@ The Promise object represents the eventual completion (or failure) of an asynchr
 // Promises
 // ES5: Part 1
 ```JS
-let isMomHappy = false;
+let amwWorkingHArd = false;
 
 // Promise
-let willIGetNewPhone = new Promise(
-    function (resolve, reject) {
-        if (isMomHappy) {
-            let phone = {
-                brand: 'Samsung',
-                color: 'black'
+let willIGetSleep = new Promise(
+    function (resolve, reject)  {
+        if (amWorkingHArd) {
+            const sleep = {
+                emotion: 'happy',
+                benifit: 'energy'
             };
-            resolve(phone); // fulfilled
+            resolve(sleep); // fulfilled
         } else {
-            let reason = new Error('mom is not happy');
+            let reason = new Error('Didnt get sleep');
             reject(reason); // reject
         }
 
     }
 );
-let willIGetNewPhoneTwo = new Promise((resolve, reject) =>{
-    if (isMomhappy) {
-        const phone = {
-            brand: "iphone",
-            color: "red"
+let sleepTommorow = new Promise((resolve, reject) =>{
+    if (amworkingHard) {
+        const takeNap = {
+            emotion: "cranky",
+            benifit: "more energy"
         }
-        resolve(phone);
+        resolve(takeNap);
     }
     else {
-        reject('No Phone');
+        reject('Uh oh');
     }
 });
 
-willIGetNewPhoneTwo.then(result => {
+sleepTomorrow.then(result => {
     console.log(result)
 });
 ```
@@ -366,16 +302,10 @@ Here’s an example with a promise that resolves in 1 second:
 ```JS
 
 async function printUsers() {//async functiom
-    const mypoint = 'https://api.github.com/users/maestronick1';//endpoint url
-    const lizzpoint = 'https://api.github.com/users/LizzWest';//endpoint url
-    let nick = await fetch(mypoint).then(response => {response.json();
-    console.log(nick);
-    
-
+    const myPoint = 'https://api.github.com/users/Guildwars';//endpoint url
+    let guildWars = await fetch(myPoint).then(response => {response.json();
+    console.log(guildWars);
     })
-let lizz = await fetch(lizzpoint).then(response => response.json());
 
-console.log(Lizz);
- }
 printUsers();
 ```
