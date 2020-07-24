@@ -149,7 +149,7 @@ console.log(fizzBuzz([3, 5, 15, 20, 9, 7]));
 ```
 
 
-## Summary of what I have learned so far in HTML, CSS, Javascript
+## Summary of what I have learned so far in HTML, CSS, Javascript-7/23/20
     THe first thing i will say that that the coding world contains an seemingly endless amout of informations and uses for the languages. I have learned how to sharpened up my HTML  a lot more even in a week; short cuts, diffrent ways to nest elements to work for my approach of coding, different inputs, the improtant ways that html ties to javascript and other laguanges. In CSS i have learned easier wys to manipulate stylings and alignments of many differnt elements. Javascript has been the most challenging language of all. It seems the language is so vast. I have leanred anbout functions, Objects, datatyes, the different typ of functions and algoritms, APIs, contractors, classes, fetch, json, and much more. I am particularly fond on DOM manipulation, because I like how it coresponds with HTML and CSS. NO DOUBT that i will be learning musch mopre soon.
     
 # Object Oriented Programing
